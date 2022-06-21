@@ -1,22 +1,25 @@
-def yes_no(question, instuctions):
+def yes_no(question):
 
     to_check = ["yes", "no"]
-    
-    instruction = 'Enter 1 to Encrypt a message', 'Enter 2 to Decrypt a message', 'Enter 3 to exit'
+    instruction = "Press 1 for Encrypt, Press 2 for Decrypt, Press 3 to exit"
     Valid = False
     while not Valid:
 
         response = input(question).lower()
 
-        for var_item in to_check:
-            if response == var_item:
+        for item in to_check:
+            if input == to_check[0]:
+                print(instruction)
+            elif response == item[1]:
                 return response
-            elif response == var_item[0]:
-                return var_item 
-
-        print("Please enter either yes or no...\n")
-
+            print("Please enter either yes or no...\n")
 
 # prints in terminal and returns input
-want_help = yes_no("Do you want to read the instructions? ", "Enter 1 for Encrypt, Enter 2 for Decrypt, Enter 3 to Exit") 
+want_help = yes_no("Do you want to read the instructions? ")
 print("You said '{}'\n".format(want_help))
+
+
+
+
+
+

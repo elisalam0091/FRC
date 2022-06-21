@@ -47,7 +47,7 @@ class Functions:
             else: #If cap is not equal to 1 - this happens
                 nDecryptedMessage += letter.lower() #As I've already placed a capital letter, the rest should be lower case
         return nDecryptedMessage #The functions returns the punctuated and decrypted message
-
+print()
 print("Welcome to Caesar Chiper")
 
 class Menu: #This is a class designed just to run the menu. This helps to make the code look tidy
